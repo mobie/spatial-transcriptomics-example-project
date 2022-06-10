@@ -7,6 +7,10 @@
           "ome.zarr": {
             "channel": 0,
             "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "channel": 0,
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -17,6 +21,10 @@
           "ome.zarr": {
             "channel": 1,
             "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "channel": 1,
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -27,6 +35,10 @@
           "ome.zarr": {
             "channel": 2,
             "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "channel": 2,
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -37,6 +49,10 @@
           "ome.zarr": {
             "channel": 3,
             "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "channel": 3,
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }

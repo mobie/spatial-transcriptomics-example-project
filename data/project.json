@@ -1,0 +1,11 @@
+{
+  "datasets": [
+    "pos42",
+    "pos42-spatial-transcriptomics"
+  ],
+  "defaultDataset": "pos42",
+  "imageDataFormats": [
+    "ome.zarr"
+  ],
+  "specVersion": "0.2.0"
+}

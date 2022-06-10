@@ -1,0 +1,148 @@
+{
+  "is2D": false,
+  "sources": {
+    "membrane-marker1": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "channel": 0,
+            "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          }
+        }
+      }
+    },
+    "membrane-marker2": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "channel": 1,
+            "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          }
+        }
+      }
+    },
+    "membrane-marker3": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "channel": 2,
+            "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          }
+        }
+      }
+    },
+    "nuclei": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "channel": 3,
+            "relativePath": "images/ome-zarr/MMStack_Pos42.ome.zarr"
+          }
+        }
+      }
+    }
+  },
+  "timepoints": 1,
+  "views": {
+    "default": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              150.0,
+              448.0
+            ],
+            "name": "membrane-marker1",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "bookmark"
+    },
+    "membrane-marker1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              150.0,
+              448.0
+            ],
+            "name": "membrane-marker1",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "image-data"
+    },
+    "membrane-marker2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              135.0,
+              383.0
+            ],
+            "name": "membrane-marker2",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "image-data"
+    },
+    "membrane-marker3": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              157.0,
+              313.0
+            ],
+            "name": "membrane-marker3",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker3"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "image-data"
+    },
+    "nuclei": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              117.0,
+              1492.0
+            ],
+            "name": "nuclei",
+            "opacity": 1.0,
+            "sources": [
+              "nuclei"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "image-data"
+    }
+  }
+}

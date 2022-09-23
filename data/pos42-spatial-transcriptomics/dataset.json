@@ -60,7 +60,9 @@
     "transcriptome": {
       "spots": {
         "tableData": {
-          "tsv": "tables/transcriptome"
+          "tsv": {
+              "relativePath": "tables/transcriptome"
+          }
         }
       }
     }

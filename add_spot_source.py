@@ -18,7 +18,7 @@ def add_spot_source():
 
     metadata = mobie.metadata.read_dataset_metadata(ds_folder)
     metadata["sources"]["transcriptome"] = {
-        "spots": {"tableData": {"tsv": "tables/transcriptome"}}
+        "spots": {"tableData": {"tsv": {"relativePath": "tables/transcriptome"}}}
     }
     mobie.metadata.write_dataset_metadata(ds_folder, metadata)
 

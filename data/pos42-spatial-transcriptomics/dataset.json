@@ -60,6 +60,7 @@
     "transcriptome": {
       "spots": {
         "tableData": {
+          "defaultTable": "default.tsv",
           "tsv": {
               "relativePath": "tables/transcriptome"
           }
@@ -176,9 +177,6 @@
           "spotDisplay": {
             "sources": [
               "transcriptome"
-            ],
-            "tables": [
-              "default.tsv"
             ]
           }
         }

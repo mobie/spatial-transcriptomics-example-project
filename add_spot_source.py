@@ -43,6 +43,7 @@ def add_spot_display(name):
         "sourceDisplays": [
             {
                 "spotDisplay": {
+                    "name": name,
                     "sources": [name],
                 }
             }
@@ -70,7 +71,8 @@ def add_combined_view():
     combined_view["sourceDisplays"].append(
         {
             "spotDisplay": {
-                "sources": ["transcriptome-small"]
+                "name": "transcriptome-small",
+                "sources": ["transcriptome-small"],
             }
         }
     )
@@ -80,8 +82,8 @@ def add_combined_view():
 
 
 def main():
-    # add_spots(False)
-    # add_spots(True)
+    add_spots(False)
+    add_spots(True)
     add_combined_view()
 
 

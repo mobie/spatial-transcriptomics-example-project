@@ -60,10 +60,24 @@
     "transcriptome": {
       "spots": {
         "tableData": {
-          "defaultTable": "default.tsv",
-          "dataStores": { "tsv": {
+          "dataStore": {
+            "tsv": {
               "relativePath": "tables/transcriptome"
-          } }
+            }
+          },
+          "defaultTable": "default.tsv"
+        }
+      }
+    },
+    "transcriptome-small": {
+      "spots": {
+        "tableData": {
+          "dataStore": {
+            "tsv": {
+              "relativePath": "tables/transcriptome-small"
+            }
+          },
+          "defaultTable": "default.tsv"
         }
       }
     }
@@ -71,7 +85,7 @@
   "timepoints": 1,
   "views": {
     "default": {
-      "isExclusive": false,
+      "isExclusive": true,
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -84,6 +98,41 @@
             "opacity": 1.0,
             "sources": [
               "membrane-marker1"
+            ]
+          }
+        },
+        {
+          "spotDisplay": {
+            "sources": [
+              "transcriptome-small"
+            ],
+            "tables": ["added.tsv"]
+          }
+        }
+      ],
+      "uiSelectionGroup": "bookmark"
+    },
+    "image_and_spots": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              150.0,
+              448.0
+            ],
+            "name": "membrane-marker1",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker1"
+            ]
+          }
+        },
+        {
+          "spotDisplay": {
+            "sources": [
+              "transcriptome-small"
             ]
           }
         }
@@ -177,6 +226,19 @@
           "spotDisplay": {
             "sources": [
               "transcriptome"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "spots"
+    },
+    "transcriptome-small": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "spotDisplay": {
+            "sources": [
+              "transcriptome-small"
             ]
           }
         }

@@ -6,7 +6,7 @@ def scale_table(table_path):
     tab = pd.read_csv(table_path, sep="\t")
     for name, sc in scale.items():
         tab[name] = tab[name] * sc
-    tab.to_csv(table_path, sep="\t", float_format="%.4f")
+    tab.to_csv(table_path, sep="\t", float_format="%.4f", index=False)
 
 
 def main():

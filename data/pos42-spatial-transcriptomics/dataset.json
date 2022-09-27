@@ -133,7 +133,8 @@
           "spotDisplay": {
             "sources": [
               "transcriptome-small"
-            ]
+            ],
+            "tables": ["added.tsv"]
           }
         }
       ],

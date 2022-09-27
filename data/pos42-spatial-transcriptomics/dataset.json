@@ -61,9 +61,9 @@
       "spots": {
         "tableData": {
           "defaultTable": "default.tsv",
-          "tsv": {
+          "dataStores": { "tsv": {
               "relativePath": "tables/transcriptome"
-          }
+          } }
         }
       }
     }

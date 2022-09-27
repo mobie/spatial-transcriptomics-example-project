@@ -60,24 +60,18 @@
     "transcriptome": {
       "spots": {
         "tableData": {
-          "dataStore": {
-            "tsv": {
-              "relativePath": "tables/transcriptome"
-            }
-          },
-          "defaultTable": "default.tsv"
+          "tsv": {
+            "relativePath": "tables/transcriptome"
+          }
         }
       }
     },
     "transcriptome-small": {
       "spots": {
         "tableData": {
-          "dataStore": {
-            "tsv": {
-              "relativePath": "tables/transcriptome-small"
-            }
-          },
-          "defaultTable": "default.tsv"
+          "tsv": {
+            "relativePath": "tables/transcriptome-small"
+          }
         }
       }
     }

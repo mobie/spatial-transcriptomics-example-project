@@ -26,10 +26,7 @@ def add_spot_source(name, point_fraction=None):
 
     metadata = mobie.metadata.read_dataset_metadata(ds_folder)
     metadata["sources"][name] = {
-        "spots": {"tableData": {
-            "dataStore": {"tsv": {"relativePath": f"tables/{name}"}},
-            "defaultTable": "default.tsv"
-        }}
+        "spots": {"tableData": {"tsv": {"relativePath": f"tables/{name}"}}},
     }
     mobie.metadata.write_dataset_metadata(ds_folder, metadata)
 

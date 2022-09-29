@@ -97,7 +97,9 @@
         },
         {
           "spotDisplay": {
+            "lut": "glasbey",
             "name": "transcriptome-small",
+            "opacity": 1.0,
             "sources": [
               "transcriptome-small"
             ]
@@ -125,7 +127,9 @@
         },
         {
           "spotDisplay": {
+            "lut": "glasbey",
             "name": "transcriptome-small",
+            "opacity": 1.0,
             "sources": [
               "transcriptome-small"
             ]
@@ -219,7 +223,9 @@
       "sourceDisplays": [
         {
           "spotDisplay": {
+            "lut": "glasbey",
             "name": "transcriptome",
+            "opacity": 1.0,
             "sources": [
               "transcriptome"
             ]
@@ -233,7 +239,9 @@
       "sourceDisplays": [
         {
           "spotDisplay": {
+            "lut": "glasbey",
             "name": "transcriptome-small",
+            "opacity": 1.0,
             "sources": [
               "transcriptome-small"
             ]

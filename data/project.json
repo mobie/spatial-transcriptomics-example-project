@@ -4,9 +4,5 @@
     "pos42-spatial-transcriptomics"
   ],
   "defaultDataset": "pos42",
-  "imageDataFormats": [
-    "ome.zarr",
-    "ome.zarr.s3"
-  ],
-  "specVersion": "0.2.0"
+  "specVersion": "0.3.0"
 }

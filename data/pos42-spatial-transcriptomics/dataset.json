@@ -59,20 +59,26 @@
     },
     "transcriptome": {
       "spots": {
+        "boundingBoxMin": [0.0, 0.0, 0.0],
+        "boundingBoxMax": [24.0, 225.28, 225.28],
         "tableData": {
           "tsv": {
             "relativePath": "tables/transcriptome"
           }
-        }
+        },
+        "unit": "micrometer"
       }
     },
     "transcriptome-small": {
       "spots": {
+        "boundingBoxMin": [0.0, 0.0, 0.0],
+        "boundingBoxMax": [24.0, 225.28, 225.28],
         "tableData": {
           "tsv": {
             "relativePath": "tables/transcriptome-small"
           }
-        }
+        },
+        "unit": "micrometer"
       }
     }
   },

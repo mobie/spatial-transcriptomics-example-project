@@ -59,8 +59,16 @@
     },
     "transcriptome": {
       "spots": {
-        "boundingBoxMin": [0.0, 0.0, 0.0],
-        "boundingBoxMax": [24.0, 225.28, 225.28],
+        "boundingBoxMax": [
+          24.0,
+          225.28,
+          225.28
+        ],
+        "boundingBoxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
         "tableData": {
           "tsv": {
             "relativePath": "tables/transcriptome"
@@ -71,8 +79,16 @@
     },
     "transcriptome-small": {
       "spots": {
-        "boundingBoxMin": [0.0, 0.0, 0.0],
-        "boundingBoxMax": [24.0, 225.28, 225.28],
+        "boundingBoxMax": [
+          24.0,
+          225.28,
+          225.28
+        ],
+        "boundingBoxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
         "tableData": {
           "tsv": {
             "relativePath": "tables/transcriptome-small"
@@ -108,7 +124,8 @@
             "opacity": 1.0,
             "sources": [
               "transcriptome-small"
-            ]
+            ],
+            "spotRadius": 0.25
           }
         }
       ],
@@ -138,7 +155,8 @@
             "opacity": 1.0,
             "sources": [
               "transcriptome-small"
-            ]
+            ],
+            "spotRadius": 0.25
           }
         }
       ],
@@ -234,7 +252,8 @@
             "opacity": 1.0,
             "sources": [
               "transcriptome"
-            ]
+            ],
+            "spotRadius": 0.25
           }
         }
       ],
@@ -250,7 +269,8 @@
             "opacity": 1.0,
             "sources": [
               "transcriptome-small"
-            ]
+            ],
+            "spotRadius": 0.25
           }
         }
       ],

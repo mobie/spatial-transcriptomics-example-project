@@ -58,16 +58,11 @@
       }
     },
     "transcriptome": {
-      "boundingBoxMax": [
-        225.28,
-        225.28,
-        24.0
-      ],
       "spots": {
         "boundingBoxMax": [
-          24.0,
           225.28,
-          225.28
+          225.28,
+          24.0
         ],
         "boundingBoxMin": [
           0.0,
@@ -83,16 +78,11 @@
       }
     },
     "transcriptome-small": {
-      "boundingBoxMax": [
-        225.28,
-        225.28,
-        24.0
-      ],
       "spots": {
         "boundingBoxMax": [
-          24.0,
           225.28,
-          225.28
+          225.28,
+          24.0
         ],
         "boundingBoxMin": [
           0.0,

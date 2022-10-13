@@ -10,7 +10,7 @@
           },
           "ome.zarr.s3": {
             "channel": 0,
-            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42-spatial-transcriptomics/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -24,7 +24,7 @@
           },
           "ome.zarr.s3": {
             "channel": 1,
-            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42-spatial-transcriptomics/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -38,7 +38,7 @@
           },
           "ome.zarr.s3": {
             "channel": 2,
-            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42-spatial-transcriptomics/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
       }
@@ -52,16 +52,56 @@
           },
           "ome.zarr.s3": {
             "channel": 3,
-            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42/images/ome-zarr/MMStack_Pos42.ome.zarr"
+            "s3Address": "https://s3.embl.de/i2k-2020/spatial-transcriptomics-example/pos42-spatial-transcriptomics/images/ome-zarr/MMStack_Pos42.ome.zarr"
           }
         }
+      }
+    },
+    "transcriptome": {
+      "spots": {
+        "boundingBoxMax": [
+          225.28,
+          225.28,
+          24.0
+        ],
+        "boundingBoxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/transcriptome"
+          }
+        },
+        "unit": "micrometer"
+      }
+    },
+    "transcriptome-small": {
+      "spots": {
+        "boundingBoxMax": [
+          225.28,
+          225.28,
+          24.0
+        ],
+        "boundingBoxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/transcriptome-small"
+          }
+        },
+        "unit": "micrometer"
       }
     }
   },
   "timepoints": 1,
   "views": {
     "default": {
-      "isExclusive": false,
+      "isExclusive": true,
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -75,6 +115,48 @@
             "sources": [
               "membrane-marker1"
             ]
+          }
+        },
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome-small",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome-small"
+            ],
+            "spotRadius": 0.25
+          }
+        }
+      ],
+      "uiSelectionGroup": "bookmark"
+    },
+    "image_and_spots": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              150.0,
+              448.0
+            ],
+            "name": "membrane-marker1",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker1"
+            ]
+          }
+        },
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome-small",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome-small"
+            ],
+            "spotRadius": 0.25
           }
         }
       ],
@@ -159,6 +241,40 @@
         }
       ],
       "uiSelectionGroup": "image-data"
+    },
+    "transcriptome": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome"
+            ],
+            "spotRadius": 0.25
+          }
+        }
+      ],
+      "uiSelectionGroup": "spots"
+    },
+    "transcriptome-small": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome-small",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome-small"
+            ],
+            "spotRadius": 0.25
+          }
+        }
+      ],
+      "uiSelectionGroup": "spots"
     }
   }
 }

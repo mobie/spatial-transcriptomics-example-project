@@ -1,7 +1,6 @@
 {
   "datasets": [
-    "pos42",
-    "pos42-spatial-transcriptomics"
+    "pos42"
   ],
   "defaultDataset": "pos42",
   "specVersion": "0.3.0"

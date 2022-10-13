@@ -57,6 +57,15 @@
         }
       }
     },
+    "positions": {
+      "regions": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/positions"
+          }
+        }
+      }
+    },
     "transcriptome": {
       "spots": {
         "boundingBoxMax": [
@@ -150,6 +159,73 @@
         }
       ],
       "uiSelectionGroup": "bookmark"
+    },
+    "grid-view": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              150.0,
+              448.0
+            ],
+            "name": "grid-view_images",
+            "opacity": 1.0,
+            "sources": [
+              "membrane-marker1",
+              "membrane-marker2"
+            ]
+          }
+        },
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "grid-view_spotss",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome-small",
+              "transcriptome-small-alt"
+            ],
+            "spotRadius": 0.25
+          }
+        },
+        {
+          "regionDisplay": {
+            "lut": "glasbey",
+            "name": "grid-view",
+            "opacity": 0.5,
+            "sources": {
+              "0": [
+                "membrane-marker1",
+                "transcriptome-small"
+              ],
+              "1": [
+                "membrane-marker2",
+                "transcriptome-small-alt"
+              ]
+            },
+            "tableSource": "positions"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "transformedGrid": {
+            "nestedSources": [
+              [
+                "membrane-marker1",
+                "transcriptome-small"
+              ],
+              [
+                "membrane-marker2",
+                "transcriptome-small-alt"
+              ]
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "bookmarks"
     },
     "image_and_spots": {
       "isExclusive": true,

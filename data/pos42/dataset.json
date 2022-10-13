@@ -96,6 +96,26 @@
         },
         "unit": "micrometer"
       }
+    },
+    "transcriptome-small-alt": {
+      "spots": {
+        "boundingBoxMax": [
+          225.28,
+          225.28,
+          24.0
+        ],
+        "boundingBoxMin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/transcriptome-small-alt"
+          }
+        },
+        "unit": "micrometer"
+      }
     }
   },
   "timepoints": 1,
@@ -269,6 +289,23 @@
             "opacity": 1.0,
             "sources": [
               "transcriptome-small"
+            ],
+            "spotRadius": 0.25
+          }
+        }
+      ],
+      "uiSelectionGroup": "spots"
+    },
+    "transcriptome-small-alt": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome-small-alt",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome-small-alt"
             ],
             "spotRadius": 0.25
           }

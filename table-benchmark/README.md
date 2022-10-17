@@ -19,5 +19,10 @@ Comparison:
 
 ## Loading many big transcriptomics tables (40)
 
-
 **Loading from filesystem**: (statistics across 5 runs)
+Min: 5.252879858016968 s
+Max: 5.372411251068115 s
+Mean: 5.284460020065308 +- 0.04501603022028916 s
+
+Comparison:
+- loading view with all the tables in MoBIE locally takes: 451280 ms: 451 sec: ~ 7.5 min

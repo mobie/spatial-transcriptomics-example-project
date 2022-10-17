@@ -1,20 +1,26 @@
 import argparse
-# import os
+import os
 import time
+from glob import glob
 
 import numpy as np
 import pandas as pd
 # import requests
 
 
+# the results should be consistent with single table, but I want this numbers for the effect ;)
 def _load_local(n_rounds):
-    table_path = "../data/pos42/tables/transcriptome/default.tsv"
+    table_pattern = "/g/kreshuk/data/marioni/shila/mouse-atlas-2020/ngff/embryo3/tables/*_genes"
+    table_folders = glob(table_pattern)
     times = []
     for _ in range(n_rounds):
         t0 = time.time()
-        pd.read_csv(table_path, sep="\t")
+        for table_folder in table_folders:
+            table_path = os.path.join(table_folder, "default.tsv")
+            assert os.path.exists(table_path)
+            pd.read_csv(table_path, sep="\t")
         times.append(time.time() - t0)
-    print("Loading a many table locally took:")
+    print("Loading many table locally took:")
     print("Min:", np.min(times), "s")
     print("Max:", np.max(times), "s")
     print("Mean:", np.mean(times), "+-", np.std(times), "s")

@@ -10,11 +10,14 @@ Mean: 0.057353544235229495 +- 0.0009124553183889059 s
 ```
 
 **Loading from github**: (statistics across 10 runs)
+Min: 0.311129093170166 s
+Max: 0.6253552436828613 s
+Mean: 0.35982043743133546 +- 0.08919928117656666 s
 
 
 Comparison:
-- loading view with the table in MoBIE locally:
-- loading view with the table in MoBIE from github:
+- loading view with the table in MoBIE locally: 7567 ms: 7.5 sec
+- loading view with the table in MoBIE from github: 7866 ms: 7.8 sec
 
 
 ## Loading many big transcriptomics tables (40)

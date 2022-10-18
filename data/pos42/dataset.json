@@ -138,6 +138,23 @@
   },
   "timepoints": 1,
   "views": {
+    "just-spots": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        {
+          "spotDisplay": {
+            "lut": "glasbey",
+            "name": "transcriptome",
+            "opacity": 1.0,
+            "sources": [
+              "transcriptome"
+            ],
+            "spotRadius": 1.0
+          }
+        }
+      ],
+      "uiSelectionGroup": "bookmark"
+    },
     "default": {
       "isExclusive": true,
       "sourceDisplays": [

@@ -28,7 +28,7 @@ def to_parquet():
 
     metadata["sources"] = sources
     with open(metadata_file, "w") as f:
-        json.dump(metadata, f)
+        json.dump(metadata, f, sort_keys=True, indent=2)
 
 
 to_parquet()

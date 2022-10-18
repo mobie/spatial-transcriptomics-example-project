@@ -79,6 +79,9 @@
           0.0
         ],
         "tableData": {
+          "parquet": {
+            "relativePath": "./data/pos42/tables/transcriptome"
+          },
           "tsv": {
             "relativePath": "tables/transcriptome"
           }
@@ -99,6 +102,9 @@
           0.0
         ],
         "tableData": {
+          "parquet": {
+            "relativePath": "./data/pos42/tables/transcriptome-small"
+          },
           "tsv": {
             "relativePath": "tables/transcriptome-small"
           }
@@ -119,6 +125,9 @@
           0.0
         ],
         "tableData": {
+          "parquet": {
+            "relativePath": "./data/pos42/tables/transcriptome-small-alt"
+          },
           "tsv": {
             "relativePath": "tables/transcriptome-small-alt"
           }
